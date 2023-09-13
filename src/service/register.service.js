@@ -1,6 +1,6 @@
 import axios from 'axios';
 export const registerUser = ({success, error,object})=>{
-  const api ="http://192.168.43.32:5001/createUser/createadd" 
+  const api ="http://192.168.43.32:5001/create/user" 
   axios
   .post(api,object)
   .then((response)=>{   

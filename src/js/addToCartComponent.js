@@ -48,7 +48,7 @@ export default {
       cancelProduct({
         success: (response) => {
           console.log(response);
-          if (response.data == "sent") {
+          if (response.data.success == true) {
             alert("Order cancelled successfully");
             this.orderStatus = false;
             sessionStorage.removeItem("status");
